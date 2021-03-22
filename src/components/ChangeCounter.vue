@@ -1,6 +1,6 @@
 <template>
     <button @click="addOne">
-        Add 1
+        Add 2
     </button>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
     methods: {
         addOne() {
-            this.$store.commit('increment');
+            this.$store.commit('increase', { value: 2 });
         }
     },
 }
