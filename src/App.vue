@@ -29,7 +29,7 @@ export default {
   methods: {
     addOne() {
       this.$store.dispatch({
-        type: 'increase',
+        type: 'numbers/increase',
         value: 1
       });
     }
